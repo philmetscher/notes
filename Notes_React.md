@@ -37,3 +37,26 @@ in HTML
 in JS X
 <div className="test"></div>
 ```
+
+## Hooks
+
+### ... werden beispielsweise gebaut wie:
+
+```javascript
+//useState ist ein Hook
+import { useState } from "react";
+
+function ExampleFunction({ param }) {
+  const [val, setVal] = useState('defaultVal');
+
+  return (
+    <div>{val}</div>
+    <button onclick={()=> {
+      setVal('anotherVal');
+    }}>
+    <button onclick={()=> {
+      setVal('TheOtherVal');
+    }}>
+  )
+}
+```
