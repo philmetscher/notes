@@ -53,10 +53,13 @@ function ExampleFunction({ param }) {
     <div>{val}</div>
     <button onclick={()=> {
       setVal('anotherVal');
-    }}>
+    }}>anotherVal</button>
     <button onclick={()=> {
-      setVal('TheOtherVal');
-    }}>
+      setVal('theOtherVal');
+    }}>theOtherVal</button>
+
+    //conditional Rendering
+    {val === "theOtherVal" && <p>Yes theOtherVal is the one</p>}
   )
 }
 ```
