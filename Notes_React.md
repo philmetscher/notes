@@ -63,3 +63,9 @@ function ExampleFunction({ param }) {
   )
 }
 ```
+
+## Icons
+
+### React-Icons
+
+- `npm install react-icons`
